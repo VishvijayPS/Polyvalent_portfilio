@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lilita+One&family=Rowdies:wght@300;400;700&family=Rubik+Mono+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/homeStyle.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <video autoplay muted loop id="backgroundVideo">
+        <source id="videoSource" src="../video/four.mp4" type="video/mp4" />
+      </video>
+      <nav class="homePage">
+        <img src="../image/menu.png" alt="menu" class="menu" />
+        <a href="../index.html"
+          ><img src="../image/logo.png" alt="logo" class="logo"
+        /></a>
+        <ul>
+          <li>
+            <a href="../webPage/home.html" class="nav_link"
+              ><img class="imgs" src="../image/home.png" alt="home" /> Home</a
+            >
+          </li>
+          <li>
+            <a href="#All_skills" class="nav_link" id="nav_link"
+              ><img class="imgs" src="../image/content.png" alt="content" />
+              Skills</a
+            >
+          </li>
+          <li>
+            <a href="#Go_to_projects" id="nav_link" class="nav_link"
+              ><img class="imgs" src="../image/project.png" alt="project" />
+              Project</a
+            >
+          </li>
+          <li>
+            <a href="./contact.html" class="nav_link"
+              ><img class="imgs" src="../image/contact.png" alt="contact" />
+              Contact</a
+            >
+          </li>
+          <input type="checkbox" id="darkmode-toggle" />
+          <label for="darkmode-toggle">
+            <svg
+              version="1.1"
+              class="sun"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 496 496"
+              style="enable-background: new 0 0 496 496"
+              xml:space="pAreserve"
+            >
+              <rect
+                x="152.994"
+                y="58.921"
+                transform="matrix(0.3827 0.9239 -0.9239 0.3827 168.6176 -118.5145)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.9"
+                y="164.979"
+                transform="matrix(0.9239 0.3827 -0.3827 0.9239 71.29 -12.4346)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="46.947"
+                y="315.048"
+                transform="matrix(0.9239 -0.3827 0.3827 0.9239 -118.531 50.2116)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="164.966"
+                y="409.112"
+                transform="matrix(-0.9238 -0.3828 0.3828 -0.9238 168.4872 891.7491)"
+                width="16"
+                height="39.999"
+              />
+
+              <rect
+                x="303.031"
+                y="421.036"
+                transform="matrix(-0.3827 -0.9239 0.9239 -0.3827 50.2758 891.6655)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.088"
+                y="315.018"
+                transform="matrix(-0.9239 -0.3827 0.3827 -0.9239 701.898 785.6559)"
+                width="40.001"
+                height="16"
+              />
+
+              <rect
+                x="409.054"
+                y="165.011"
+                transform="matrix(-0.9239 0.3827 -0.3827 -0.9239 891.6585 168.6574)"
+                width="40.001"
+                height="16"
+              />
+              <rect
+                x="315.001"
+                y="46.895"
+                transform="matrix(0.9238 0.3828 -0.3828 0.9238 50.212 -118.5529)"
+                width="16"
+                height="39.999"
+              />
+              <path
+                d="M248,88c-88.224,0-160,71.776-160,160s71.776,160,160,160s160-71.776,160-160S336.224,88,248,88z M248,392
+                  c-79.4,0-144-64.6-144-144s64.6-144,144-144s144,64.6,144,144S327.4,392,248,392z"
+              />
+              <rect x="240" width="16" height="72" />
+              <rect
+                x="62.097"
+                y="90.096"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 98.0963 -40.6334)"
+                width="71.999"
+                height="16"
+              />
+              <rect y="240" width="72" height="16" />
+
+              <rect
+                x="90.091"
+                y="361.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -113.9157 748.643)"
+                width="16"
+                height="71.999"
+              />
+              <rect x="240" y="424" width="16" height="72" />
+
+              <rect
+                x="361.881"
+                y="389.915"
+                transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 397.8562 960.6281)"
+                width="71.999"
+                height="16"
+              />
+              <rect x="424" y="240" width="72" height="16" />
+              <rect
+                x="389.911"
+                y="62.091"
+                transform="matrix(0.7071 0.7071 -0.7071 0.7071 185.9067 -252.6357)"
+                width="16"
+                height="71.999"
+              />
+            </svg>
+            <svg
+              version="1.1"
+              class="moon"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 49.739 49.739"
+              style="enable-background: new 0 0 49.739 49.739"
+              xml:space="preserve"
+            >
+              <path
+                d="M25.068,48.889c-9.173,0-18.017-5.06-22.396-13.804C-3.373,23.008,1.164,8.467,13.003,1.979l2.061-1.129l-0.615,2.268
+         c-1.479,5.459-0.899,11.25,1.633,16.306c2.75,5.493,7.476,9.587,13.305,11.526c5.831,1.939,12.065,1.492,17.559-1.258v0
+         c0.25-0.125,0.492-0.258,0.734-0.391l2.061-1.13l-0.585,2.252c-1.863,6.873-6.577,12.639-12.933,15.822
+         C32.639,48.039,28.825,48.888,25.068,48.889z M12.002,4.936c-9.413,6.428-12.756,18.837-7.54,29.253
+         c5.678,11.34,19.522,15.945,30.864,10.268c5.154-2.582,9.136-7.012,11.181-12.357c-5.632,2.427-11.882,2.702-17.752,0.748
+         c-6.337-2.108-11.473-6.557-14.463-12.528C11.899,15.541,11.11,10.16,12.002,4.936z"
+              />
+            </svg>
+          </label>
+        </ul>
+      </nav>
+    </div>
+    <model-viewer src="../models/bot.glb" id="eye-model3000" camera-orbit="0degs 0degs" autoplay environment-image="neutral" shadow-intensity="1"></model-viewer>
+    <!-- <div id="container3D"></div> -->
+    <section class="main">
+      <div class="hero_info">
+        <h1 class="head">Welcom to My Portfolio</h1>
+        <img src="../image/mini.png" alt="persoal image" class="photo" />
+        <img src="../image/round.png" alt="back_img" class="img_2" />
+        <div class="right_info">
+          <h2 class="name">I,m Vishvijay P S</h2>
+          <h2 class="type">
+            I am <span class="typing-animation" id="typing-animation"></span>
+          </h2>
+          <p class="animated-paragraph">
+            I am an engineering student specializing in Cybersecurity,
+            passionate about coding, building secure applications, and
+            developing innovative projects. I have experience in web
+            development, mobile app development, and microcontroller projects,
+            constantly learning and creating unique project and finding
+            solution.
+          </p>
+          <p class="gname">
+            <u>Gmail:</u>
+            <a href="mailto:vishvijayps123@gmail.com" class="gmail">
+              vishvijayps123@gmail.com
+            </a>
+          </p>
+          <br /><br /><br />
+          <div class="social-links">
+            <a
+              href="https://github.com/VishvijayPS?tab=overview&from=2024-12-01&to=2024-12-31"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1300"
+              ><i class="fa-brands fa-github"
+                ><img
+                  src="../image/git-hub.png"
+                  alt="github"
+                  class="image" /></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/in/vishvijay-p-s-47b70b296"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
+              ><i class="fa-brands fa-facebook"
+                ><img
+                  src="../image/linkedin.svg"
+                  alt="linkdin"
+                  class="image"
+                  style="z-index: -1" /></i
+            ></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
+              ><i class="fa-brands fa-linkedin"
+                ><img
+                  src="../image/whatsapp.png"
+                  alt="github"
+                  class="image" /></i
+            ></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1600"
+              ><i class="fa-brands fa-twitter"
+                ><img
+                  src="../image/instagram.png"
+                  alt="github"
+                  class="image" /></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <section class="about">
+        <div class="section_div" id="cont1">
+          <p class="animated-paragraph">
+            Hi, I'm Vishvijay P S, a passionate 2nd-year engineering student
+            specializing in Cyber Security. I have a strong foundation in
+            software development, web development, and Android app
+            development.<br />
+            <br />
+            🚀 I have experience in multiple programming languages, including
+            C++, SQL, Java, Python, JavaScript, HTML, CSS, and XML. I enjoy
+            building projects that involve software security, web applications,
+            and mobile apps.
+          </p>
+        </div>
+        <div class="circle">
+          <h1>About me</h1>
+          <img src="../image/mini.png" alt="persoal image" class="photo" />
+        </div>
+      </section>
+
+      <section class="education">
+        <div class="section_div" id="cont5">
+          <h2 class="edu_education">Education</h2>
+          <span class="line"></span>
+          <div class="edu-container">
+            <div class="edu-card">
+              <h3 class="edu_name">Engineering in Cyber Security</h3>
+              <p>Computer Science Subdomain - 4th Semester</p>
+              <p><strong>Year:</strong> Ongoing</p>
+            </div>
+            <div class="edu-card">
+              <h3 class="edu_name">PUC (PCMCs)</h3>
+              <p>BGS College, Balehonnur</p>
+              <p><strong>Year:</strong> 2022</p>
+            </div>
+            <div class="edu-card">
+              <h3 class="edu_name">SSLC</h3>
+              <p>Prabhodini Vidya Kendra, Kalasa</p>
+              <p><strong>Year:</strong> Completed</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="project" id="Go_to_projects">
+        <div class="project_head">
+          <h1 class="prjName">Projects</h1>
+          <img src="../image/pj.png" alt="ptoject" class="pj_img" />
+        </div>
+        <div class="section_div" id="cont2">
+          <div class="child" id="project_Names">
+            <h1 class="project_heads">Websites</h1>
+            <img src="../image/arrow.png" alt="arrow" class="arrow" />
+          </div>
+          <div class="child" id="project_1">
+            <h1 class="project_heads">Simple Calculator</h1>
+            <p class="explanation">
+              Web Calsi is a simple and responsive calculator web app I
+              developed as a mini project using HTML, CSS, and JavaScript. It
+              performs basic arithmetic operations with a clean UI and real-time
+              result display.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/calsi/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/calsi', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/calsi', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_2">
+            <h1 class="project_heads">Landing page</h1>
+            <p class="explanation">
+              Landing Page is a responsive and visually appealing website I
+              created as a mini project using HTML, CSS. It features a
+              structured layout, engaging design, and smooth navigation to
+              showcase content effectively.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/landing-page/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/landing-page', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/landing-page', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_3">
+            <h1 class="project_heads">Personal website</h1>
+            <p class="explanation">
+              My Personal Website is a portfolio site I developed to showcase my
+              projects, skills, and achievements. Built using HTML, CSS, and
+              JavaScript as my first big web project.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/V-website-1/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_4">
+            <h1 class="project_heads">Portfolio</h1>
+            <p class="explanation">
+              My portfolio responsive website with simple and clear structured
+              way I created for my web develoment internship project.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/portfolio/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/portfolio', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/portfolio', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_5">
+            <h1 class="project_heads">Alarm Timer</h1>
+            <p class="explanation">
+              A web clock project for my IBM cource mini-project on java-script,
+              In here I created a light and dark theme fetured alarm website
+              with chooseble tone with detailed information.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/ibmproject/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/ibmproject', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/ibmproject', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_Names">
+            <h1 class="project_heads">Console projects</h1>
+            <img src="../image/arrow.png" alt="arrow" class="arrow" />
+          </div>
+          <div class="child" id="project_6">
+            <h1 class="project_heads">KeyQuill</h1>
+            <p class="explanation">
+              My own encoding and decoding java program which take any input
+              string and give a encoded strings in a unpredictable such as it
+              will give different value every time, The decoder will decript the
+              message and give the decoded message.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/Decrypt', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/Decrypt', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_Names">
+            <h1 class="project_heads">Android apps</h1>
+            <img src="../image/arrow.png" alt="arrow" class="arrow" />
+          </div>
+          <div class="child" id="project_7">
+            <h1 class="project_heads">Java Quest</h1>
+            <p class="explanation">
+              A educational app to help engineering students to prepare for
+              competitive exams and to get computing skills in soft skills by
+              solving all aptitude question with in a time period in this app.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/JAVA_android_App', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/JAVA_android_App', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <!-- <div class="child" id="project_8">
+            <h1 class="project_heads">Personal website</h1>
+            <p class="explanation">
+              My Personal Website is a portfolio site I developed to showcase my
+              projects, skills, and achievements. Built using HTML, CSS, and
+              JavaScript as my first big web project.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/V-website-1/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_9">
+            <h1 class="project_heads">Personal website</h1>
+            <p class="explanation">
+              My Personal Website is a portfolio site I developed to showcase my
+              projects, skills, and achievements. Built using HTML, CSS, and
+              JavaScript as my first big web project.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/V-website-1/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div>
+          <div class="child" id="project_10">
+            <h1 class="project_heads">Personal website</h1>
+            <p class="explanation">
+              My Personal Website is a portfolio site I developed to showcase my
+              projects, skills, and achievements. Built using HTML, CSS, and
+              JavaScript as my first big web project.
+            </p>
+            <div class="button-container">
+              <button
+                class="custom-btn"
+                onclick="window.open('https://vishvijayps.github.io/V-website-1/', '_blank')"
+              >
+                <span class="b_Link">See web</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://github.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Repository</span>
+              </button>
+              <button
+                class="custom-btn"
+                onclick="window.open('https://githubbox.com/VishvijayPS/V-website-1', '_blank')"
+              >
+                <span class="b_Link">Coder Editor</span>
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section class="skills" id="All_skills">
+        <div class="section_div" id="cont3">
+          <li>
+            <h3>html</h3>
+            <p>90%</p>
+            <span class="bar"><span class="html"></span></span>
+          </li>
+          <li>
+            <h3>css</h3>
+            <p>100%</p>
+            <span class="bar"><span class="css"></span></span>
+          </li>
+          <li>
+            <h3>python</h3>
+            <p>70%</p>
+            <span class="bar"><span class="python"></span></span>
+          </li>
+          <li>
+            <h3>javascript</h3>
+            <p>80%</p>
+            <span class="bar"><span class="javascript"></span></span>
+          </li>
+          <li>
+            <h3>java</h3>
+            <p>80%</p>
+            <span class="bar"><span class="java"></span></span>
+          </li>
+          <li>
+            <h3>c</h3>
+            <p>80%</p>
+            <span class="bar"><span class="c"></span></span>
+          </li>
+          <li>
+            <h3>sql</h3>
+            <p>90%</p>
+            <span class="bar"><span class="sql"></span></span>
+          </li>
+        </div>
+        <div class="circle">
+          <h1>Skills</h1>
+          <img src="../image/skills.jpg" alt="skill image" class="sk_image" />
+        </div>
+      </section>
+
+      <section class="other_skills">
+        <div class="oth_head">
+          <h1 class="prjName">Other Skills</h1>
+        </div>
+        <div class="section_div" id="cont4">
+          <li>
+            <h3>Editing</h3>
+            <p>90%</p>
+            <span class="bar"><span class="html"></span></span>
+          </li>
+          <li>
+            <h3>Presentation</h3>
+            <p>100%</p>
+            <span class="bar"><span class="css"></span></span>
+          </li>
+          <li>
+            <h3>hacking tools</h3>
+            <p>70%</p>
+            <span class="bar"><span class="php"></span></span>
+          </li>
+          <li>
+            <h3>Arduino</h3>
+            <p>80%</p>
+            <span class="bar"><span class="javascript"></span></span>
+          </li>
+        </div>
+      </section>
+      <section id="contact">
+        <div id="cont" class="section_div">
+          <h1 class="head_Contact">Contact me</h1>
+          <p>
+            <span class="cont_heads">Phone: </span>
+            <span class="cont_info">+91 8296794317</span>
+          </p>
+          <p>
+            <span class="cont_heads">Email: </span>
+            <a class="cont_links" href="mailto:vishvijayps123@gmail.com"
+              >vishvijayps123@gmail.com</a
+            >
+          </p>
+          <p>
+            <span class="cont_heads">Location: </span>
+            <span class="cont_info">Kalasa, Chikkamagalore, India</span>
+          </p>
+          <p>
+            <span class="cont_heads">GitHub: </span>
+            <a
+              class="cont_links"
+              href="https://github.com/VishvijayPS"
+              target="_blank"
+              >github.com/VishviajyPS</a
+            >
+          </p>
+          <p>
+            <span class="cont_heads">Portfolio: </span>
+            <a
+              class="cont_links"
+              href="https://VishvijayPS.github.io/V-website-1/"
+              target="_blank"
+              >My Website</a
+            >
+          </p>
+          <span class="horizontal-line"></span>
+          <div class="social-links">
+            <a
+              href="https://github.com/VishvijayPS?tab=overview&from=2024-12-01&to=2024-12-31"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1300"
+              ><i class="fa-brands fa-github"
+                ><img
+                  src="../image/git-hub.png"
+                  alt="github"
+                  class="image" /></i
+            ></a>
+            <a
+              href="https://in.linkedin.com/in/vishvijay-p-s-47b70b296"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1400"
+              ><i class="fa-brands fa-facebook"
+                ><img
+                  src="../image/linkedin.svg"
+                  alt="linkdin"
+                  class="image"
+                  style="z-index: -1" /></i
+            ></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1500"
+              ><i class="fa-brands fa-linkedin"
+                ><img
+                  src="../image/whatsapp.png"
+                  alt="github"
+                  class="image" /></i
+            ></a>
+            <a
+              href="#"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-delay="1600"
+              ><i class="fa-brands fa-twitter"
+                ><img
+                  src="../image/instagram.png"
+                  alt="github"
+                  class="image" /></i
+            ></a>
+          </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          Scroll Up
+        </button>
+      </section>
+    </div>
+
+    <script src="../script/homeDarkMode.js"></script>
+    <script src="../script/home_3dModel.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sections = document.querySelectorAll(".section_div");
+        const animatedParagraph = document.querySelectorAll(
+          ".animated-paragraph"
+        );
+
+        const observerOptions = {
+          root: null, // Use the viewport as the root
+          rootMargin: "0px 0px -30% 0px", // Trigger when the element is 70% in view
+          threshold: 0, // Trigger as soon as any part of the element is visible
+        };
+
+        const observerOptions2 = {
+          root: null, // Use the viewport as the root
+          rootMargin: "0px",
+          threshold: 0.7, // Trigger when 70% of the element is visible
+        };
+
+        const observer = new IntersectionObserver(
+          (entries, observer) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("in-view");
+              } else {
+                entry.target.classList.remove("in-view");
+              }
+            });
+          },
+          observerOptions,
+          observerOptions2
+        );
+
+        sections.forEach((section_div) => {
+          observer.observe(section_div);
+        });
+        animatedParagraph.forEach((animatedParagraph) => {
+          observer.observe(animatedParagraph);
+        });
+      });
+
+      const scrollContainer = document.getElementById("cont2");
+
+      scrollContainer.addEventListener("wheel", (event) => {
+        // Check if scrolling left/right should be allowed
+        if (scrollContainer.scrollLeft === 0 && event.deltaY < 0) {
+          // If at the left end and trying to scroll up, allow normal vertical scrolling
+          return;
+        } else if (
+          scrollContainer.scrollLeft + scrollContainer.clientWidth >=
+            scrollContainer.scrollWidth &&
+          event.deltaY > 0
+        ) {
+          // If at the right end and trying to scroll down, allow normal vertical scrolling
+          return;
+        }
+
+        // Otherwise, prevent vertical scrolling and enable left/right scroll
+        event.preventDefault();
+        scrollContainer.scrollLeft += event.deltaY * 5;
+      });
+    </script>
+    <script src="../script/type.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
