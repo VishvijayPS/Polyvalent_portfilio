@@ -1119,7 +1119,7 @@ input {
   font-family: "Lilita One", serif;
   margin: 0;
   padding-left: 1em;
-  margin-top: -10%;
+  margin-top: 10%;
 }
 
 .dark-mode .right_info .name {
